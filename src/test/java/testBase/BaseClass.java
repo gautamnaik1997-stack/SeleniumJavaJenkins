@@ -32,7 +32,7 @@ private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 public Logger logger;
 public Properties p;
 
-public WebDriver getDriver() {
+public static WebDriver getDriver() {
 	return driver.get();
 }
 	
@@ -49,56 +49,46 @@ public WebDriver getDriver() {
 		
 		String executionType = System.getProperty("executionType", p.getProperty("executiontype"));
 		String browser = System.getProperty("browser", br);
-		String systemBrowser = System.getProperty("browser");
 
-		System.out.println("================================");
-		System.out.println("System Browser = " + systemBrowser);
-		System.out.println("TestNG Browser = " + br);
-		System.out.println("Final Browser  = " + browser);
-		System.out.println("================================");
-		if(browser==null || browser.trim().isEmpty()) {
-			browser = "Chrome";
-		}
 		boolean Headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
 		
 		ChromeOptions chromeOptions = new ChromeOptions();
 		EdgeOptions edgeOptions = new EdgeOptions();
 		FirefoxOptions firefoxOptions = new FirefoxOptions();
 		
-		// Chrome
-		chromeOptions.addArguments("--disable-gpu");
-		chromeOptions.addArguments("--disable-dev-shm-usage");
-		chromeOptions.addArguments("--no-sandbox");
-		
-		// Edge
-		edgeOptions.addArguments("--disable-gpu");
-		edgeOptions.addArguments("--disable-dev-shm-usage");
-		edgeOptions.addArguments("--no-sandbox");
-		
 		if(Headless==true) {
 			
 			chromeOptions.addArguments("--headless=new");
 			chromeOptions.addArguments("--window-size=1920,1080");
+			chromeOptions.addArguments("--disable-dev-shm-usage");
+			chromeOptions.addArguments("--no-sandbox");
 			
 			edgeOptions.addArguments("--headless=new");
-			edgeOptions.addArguments("--window-size=1920,1080");	
+			edgeOptions.addArguments("--window-size=1920,1080");
+			edgeOptions.addArguments("--disable-dev-shm-usage");
+			edgeOptions.addArguments("--no-sandbox");
 			
 			firefoxOptions.addArguments("--headless");
-			firefoxOptions.addArguments("--height=1920");
-			firefoxOptions.addArguments("--width=1080");
+			firefoxOptions.addArguments("--width=1920");
+			firefoxOptions.addArguments("--height=1080");
+		}
+		
+		
+		if(browser==null || browser.trim().isEmpty()) {
+			browser = "Edge";
 		}
 		
 		if(executionType.equalsIgnoreCase("remote")) {
 			String huburl = "http://localhost:4444";
 			switch(browser.toLowerCase()) {
-			case "chrome": chromeOptions.setPlatformName(os.toLowerCase());
+			case "chrome": chromeOptions.setPlatformName(os);
 			driver.set(new RemoteWebDriver(new URL(huburl), chromeOptions));break;
 						   
-			case "edge": edgeOptions.setPlatformName(os.toLowerCase());
+			case "edge": edgeOptions.setPlatformName(os);
 			driver.set(new RemoteWebDriver(new URL(huburl), edgeOptions));break;
-			case "firefox": firefoxOptions.setPlatformName(os.toLowerCase());
+			case "firefox": firefoxOptions.setPlatformName(os);
 			driver.set(new RemoteWebDriver(new URL(huburl), firefoxOptions));break;
-			default: throw new IllegalArgumentException("Inavlid browser: "+ br);
+			default: throw new IllegalArgumentException("Inavlid browser: "+ browser);
 			}
 		}
 		
@@ -107,7 +97,7 @@ public WebDriver getDriver() {
 			case "chrome": driver.set(new ChromeDriver(chromeOptions));break;
 			case "edge": driver.set(new EdgeDriver(edgeOptions));break;
 			case "firefox": driver.set(new FirefoxDriver(firefoxOptions)); break;
-			default: throw new IllegalArgumentException("Inavlid browser: "+ br);
+			default: throw new IllegalArgumentException("Inavlid browser: "+ browser);
 			}
 		}
 		
@@ -119,25 +109,26 @@ public WebDriver getDriver() {
 		}
 		
 		
-		driver.get().manage().deleteAllCookies();
-		driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		getDriver().manage().deleteAllCookies();
+		
 		if(Headless==false) {
-			driver.get().manage().window().maximize();
+			getDriver().manage().window().maximize();
 		}
+		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get().get(p.getProperty("appUrl"));
 	}
 	
 	@AfterClass(alwaysRun = true)
 	public void teardown(){
-	if(driver.get()!=null) {
-		driver.get().quit();
+	if(getDriver()!=null) {
+		getDriver().quit();
 		driver.remove();
 		}
 	}
 	
 	public static String captureScreenshot(String cname) throws IOException {
 		String timeStamp = new SimpleDateFormat("yyyy.mm.dd.HH.mm.ss").format(new Date());
-		TakesScreenshot ts = (TakesScreenshot) driver.get();
+		TakesScreenshot ts = (TakesScreenshot) getDriver();
 		String path = System.getProperty("user.dir")+"//screenshots//" + cname + "_" + timeStamp +".png";
 		File sourceFile = ts.getScreenshotAs(OutputType.FILE);
 		File targetFile = new File(path);

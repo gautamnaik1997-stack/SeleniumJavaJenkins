@@ -1,4 +1,3 @@
-import groovy.util.XmlSlurper
 
 //====================================================
 // Notification Configuration
@@ -109,8 +108,11 @@ def getNotificationConfig() {
 def getExecutionInfoTable() {
 
 def browserDisplay = params.BROWSER
-if (params.SUITEXMLFILE in ['paralleltesting.xml', 'crossbrowsertesting.xml']) {
-    browserDisplay = 'Chrome, Edge, Firefox'
+if (params.SUITEXMLFILE == 'paralleltesting.xml') {
+    browserDisplay = 'Chrome | Edge | Firefox (Parallel)'
+}
+else if (params.SUITEXMLFILE == 'crossbrowsertesting.xml') {
+    browserDisplay = 'Chrome → Edge → Firefox'
 }
 
  return """
@@ -149,6 +151,7 @@ if (params.SUITEXMLFILE in ['paralleltesting.xml', 'crossbrowsertesting.xml']) {
  </table>
  """
 }
+
 //====================================================
 //Test Summary
 //====================================================
@@ -352,19 +355,6 @@ pipeline {
         EMAIL_TO = 'gautamnaik124@gmail.com'
 
     }
-
-    triggers {
-
-        // cron('H 2 * * *')
-
-        // Uncomment if Poll SCM is required
-
-        // pollSCM('H/10 * * * *')
-	
-	// This activates the GitHub webhook trigger:
-        githubPush()
-
-    }
     
     parameters {
 
@@ -389,7 +379,7 @@ pipeline {
                 'regression.xml',
                 'paralleltesting.xml',
 		'grouping.xml',
-		'crossbrowser.xml'
+		'crossbrowsertesting.xml'
             ],
             description: 'Select TestNG Suite'
         )
@@ -409,7 +399,14 @@ pipeline {
     }
 
     stages{
-    
+	
+    stage('Verify Branch') {
+    steps {
+        bat 'git branch'
+        bat 'git log --oneline -1'
+    }
+    }
+      
     stage('Initialize Build') {
 
         steps {
@@ -467,26 +464,22 @@ pipeline {
     stage('Execute Automation') {
 
         steps {
+
+	script{
+
+	    def browserProperty = ""
 		
-	   script {
-		
-		def browserProperty = ""
-		
-		 if (!(params.SUITEXMLFILE in ['paralleltesting.xml', 'crossbrowsertesting.xml'])) {
+	    if (!(params.SUITEXMLFILE in ['paralleltesting.xml', 'crossbrowsertesting.xml'])) {
                 browserProperty = "-Dbrowser=${params.BROWSER}"
-            	}
-		
-		echo "browserProperty = ${browserProperty}"
-		echo "params.BROWSER = ${params.BROWSER}"
+            }
+
+
 
             bat """
-	
-echo Running:
-echo mvn clean test ${browserProperty} -DsuiteXmlFile=${params.SUITEXMLFILE} -Denvironment=${params.ENVIRONMENT} -DexecutionType=${params.EXECUTION_TYPE} -Dheadless=${params.HEADLESS}
 
             mvn clean test ^
-
-            ${browserProperty} ^
+	
+	    ${browserProperty} ^
 
             -DsuiteXmlFile=${params.SUITEXMLFILE} ^
 

@@ -24,16 +24,7 @@
           <suiteXmlFiles>
           <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
           </suiteXmlFiles>
-          
-           <systemPropertyVariables>
-            <browser>${browser}</browser>
-            <environment>${environment}</environment>
-            <executionType>${executionType}</executionType>
-            <headless>${headless}</headless>
-        </systemPropertyVariables>
-        
           </configuration>
-          
         </plugin>
       </plugins>
    </build>
