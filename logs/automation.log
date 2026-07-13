@@ -1,0 +1,823 @@
+17:59:14.229 [main] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+17:59:14.248 [main] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+17:59:14.589 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+17:59:15.977 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+17:59:15.978 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+18:13:27.667 [main] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+18:13:27.685 [main] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+18:13:28.053 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+18:13:30.019 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+18:13:30.019 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+18:50:14.710 [main] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+18:50:14.728 [main] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+18:50:15.224 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+18:50:17.629 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+18:50:17.629 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+18:52:56.527 [main] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+18:52:56.545 [main] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+18:52:56.919 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+18:52:58.347 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+18:52:58.347 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+18:59:08.198 [main] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+18:59:08.217 [main] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+18:59:08.607 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+18:59:10.017 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+18:59:10.017 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+19:23:05.030 [main] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+19:23:05.048 [main] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+19:23:05.415 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+19:23:07.298 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+19:23:07.298 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+19:30:49.740 [main] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+19:30:49.765 [main] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+19:30:50.165 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+19:30:51.617 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+19:30:51.617 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+19:37:00.502 [main] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+19:37:00.522 [main] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+19:37:00.912 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+19:37:11.303 [main] DEBUG testCases.verifyLoginFunction - TestExecution failed
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[normalize-space()='My Account']"}
+  (Session info: chrome=150.0.7871.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7d086115e1913d81f17aafc934ff1651, findElement {value=//h2[normalize-space()='My Account'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.114, chrome: {chromedriverVersion: 150.0.7871.115 (25f5b661e5b..., userDataDir: C:\Users\GAUTAM\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52924}, goog:processID: 10600, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52924/devtoo..., se:cdpVersion: 150.0.7871.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d086115e1913d81f17aafc934ff1651
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+	at pageObjects.MyAccountPage.confirmMsg(MyAccountPage.java:17)
+	at testCases.verifyLoginFunction.validateLogin(verifyLoginFunction.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+19:37:11.308 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:16:40.123 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:40.130 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:40.132 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:40.675 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:40.676 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:40.678 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:40.714 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:40.715 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:40.716 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:40.751 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:40.752 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:40.752 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:40.779 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:40.780 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:40.781 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:40.807 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:40.808 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:40.809 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:40.833 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:40.834 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:40.835 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:40.858 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:40.859 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:40.860 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:40.881 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:40.882 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:40.883 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:40.905 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:40.906 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:40.907 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:40.931 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:40.932 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:40.933 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:40.954 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:40.955 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:40.955 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:40.976 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:40.976 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:40.977 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:40.998 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:40.998 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:41.000 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:41.023 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:41.024 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:41.024 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:41.048 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:41.049 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:41.050 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:41.071 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:16:41.072 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:16:41.072 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:16:41.113 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Starting TC_validateLoginDataDriven **********
+20:16:41.131 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Clicking Login button from dropdown **********
+20:16:41.510 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Setting email and password for login **********
+20:16:41.629 [main] DEBUG testCases.TC002_VerifyLoginDataDriven - TestExecution failed
+java.lang.IllegalArgumentException: Keys to send must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:68)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:99)
+	at pageObjects.LoginPage.setPassword(LoginPage.java:21)
+	at testCases.TC002_VerifyLoginDataDriven.validateLoginDataDriven(TC002_VerifyLoginDataDriven.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+20:16:41.634 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Ending TC_validateLoginDataDriven **********
+20:16:41.881 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Starting TC_validateLoginDataDriven **********
+20:16:41.882 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Clicking Login button from dropdown **********
+20:16:42.281 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Setting email and password for login **********
+20:16:42.423 [main] DEBUG testCases.TC002_VerifyLoginDataDriven - TestExecution failed
+java.lang.IllegalArgumentException: Keys to send must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:68)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:99)
+	at pageObjects.LoginPage.setPassword(LoginPage.java:21)
+	at testCases.TC002_VerifyLoginDataDriven.validateLoginDataDriven(TC002_VerifyLoginDataDriven.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+20:16:42.424 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Ending TC_validateLoginDataDriven **********
+20:16:42.539 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Starting TC_validateLoginDataDriven **********
+20:16:42.540 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Clicking Login button from dropdown **********
+20:16:42.929 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Setting email and password for login **********
+20:16:43.074 [main] DEBUG testCases.TC002_VerifyLoginDataDriven - TestExecution failed
+java.lang.IllegalArgumentException: Keys to send must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:68)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:99)
+	at pageObjects.LoginPage.setPassword(LoginPage.java:21)
+	at testCases.TC002_VerifyLoginDataDriven.validateLoginDataDriven(TC002_VerifyLoginDataDriven.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+20:16:43.075 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Ending TC_validateLoginDataDriven **********
+20:16:43.192 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Starting TC_validateLoginDataDriven **********
+20:16:43.192 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Clicking Login button from dropdown **********
+20:16:43.555 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Setting email and password for login **********
+20:16:43.691 [main] DEBUG testCases.TC002_VerifyLoginDataDriven - TestExecution failed
+java.lang.IllegalArgumentException: Keys to send must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:68)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:99)
+	at pageObjects.LoginPage.setPassword(LoginPage.java:21)
+	at testCases.TC002_VerifyLoginDataDriven.validateLoginDataDriven(TC002_VerifyLoginDataDriven.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+20:16:43.691 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Ending TC_validateLoginDataDriven **********
+20:16:43.804 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Starting TC_validateLoginDataDriven **********
+20:16:43.804 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Clicking Login button from dropdown **********
+20:16:44.169 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Setting email and password for login **********
+20:16:44.344 [main] DEBUG testCases.TC002_VerifyLoginDataDriven - TestExecution failed
+java.lang.IllegalArgumentException: Keys to send must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:68)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:99)
+	at pageObjects.LoginPage.setPassword(LoginPage.java:21)
+	at testCases.TC002_VerifyLoginDataDriven.validateLoginDataDriven(TC002_VerifyLoginDataDriven.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+20:16:44.345 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Ending TC_validateLoginDataDriven **********
+20:19:20.361 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:20.366 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:20.368 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:20.886 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:20.887 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:20.888 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:20.927 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:20.929 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:20.930 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:20.974 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:20.975 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:20.976 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:21.003 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:21.004 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:21.005 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:21.031 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:21.032 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:21.033 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:21.056 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:21.056 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:21.057 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:21.081 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:21.082 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:21.083 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:21.107 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:21.108 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:21.109 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:21.132 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:21.133 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:21.134 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:21.159 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:21.159 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:21.160 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:21.181 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:21.182 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:21.183 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:21.202 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:21.203 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:21.204 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:21.224 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:21.224 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:21.225 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:21.244 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:21.244 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:21.245 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:21.265 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:21.266 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:21.267 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:21.285 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:19:21.285 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:19:21.286 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:19:21.320 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Starting TC_validateLoginDataDriven **********
+20:19:21.335 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Clicking Login button from dropdown **********
+20:19:21.722 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Setting email and password for login **********
+20:19:21.847 [main] DEBUG testCases.TC002_VerifyLoginDataDriven - TestExecution failed
+java.lang.IllegalArgumentException: Keys to send must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:68)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:99)
+	at pageObjects.LoginPage.setPassword(LoginPage.java:21)
+	at testCases.TC002_VerifyLoginDataDriven.validateLoginDataDriven(TC002_VerifyLoginDataDriven.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+20:19:21.851 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Ending TC_validateLoginDataDriven **********
+20:19:22.108 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Starting TC_validateLoginDataDriven **********
+20:19:22.108 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Clicking Login button from dropdown **********
+20:19:22.520 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Setting email and password for login **********
+20:19:22.661 [main] DEBUG testCases.TC002_VerifyLoginDataDriven - TestExecution failed
+java.lang.IllegalArgumentException: Keys to send must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:68)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:99)
+	at pageObjects.LoginPage.setPassword(LoginPage.java:21)
+	at testCases.TC002_VerifyLoginDataDriven.validateLoginDataDriven(TC002_VerifyLoginDataDriven.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+20:19:22.662 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Ending TC_validateLoginDataDriven **********
+20:19:22.776 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Starting TC_validateLoginDataDriven **********
+20:19:22.777 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Clicking Login button from dropdown **********
+20:19:23.122 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Setting email and password for login **********
+20:19:23.264 [main] DEBUG testCases.TC002_VerifyLoginDataDriven - TestExecution failed
+java.lang.IllegalArgumentException: Keys to send must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:68)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:99)
+	at pageObjects.LoginPage.setPassword(LoginPage.java:21)
+	at testCases.TC002_VerifyLoginDataDriven.validateLoginDataDriven(TC002_VerifyLoginDataDriven.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+20:19:23.265 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Ending TC_validateLoginDataDriven **********
+20:19:23.400 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Starting TC_validateLoginDataDriven **********
+20:19:23.400 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Clicking Login button from dropdown **********
+20:19:23.774 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Setting email and password for login **********
+20:19:23.905 [main] DEBUG testCases.TC002_VerifyLoginDataDriven - TestExecution failed
+java.lang.IllegalArgumentException: Keys to send must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:68)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:99)
+	at pageObjects.LoginPage.setPassword(LoginPage.java:21)
+	at testCases.TC002_VerifyLoginDataDriven.validateLoginDataDriven(TC002_VerifyLoginDataDriven.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+20:19:23.906 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Ending TC_validateLoginDataDriven **********
+20:19:24.019 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Starting TC_validateLoginDataDriven **********
+20:19:24.019 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Clicking Login button from dropdown **********
+20:19:24.417 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Setting email and password for login **********
+20:19:24.559 [main] DEBUG testCases.TC002_VerifyLoginDataDriven - TestExecution failed
+java.lang.IllegalArgumentException: Keys to send must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:68)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:99)
+	at pageObjects.LoginPage.setPassword(LoginPage.java:21)
+	at testCases.TC002_VerifyLoginDataDriven.validateLoginDataDriven(TC002_VerifyLoginDataDriven.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+20:19:24.559 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Ending TC_validateLoginDataDriven **********
+20:20:14.243 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:14.250 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:14.252 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:14.791 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:14.792 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:14.794 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:14.824 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:14.825 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:14.826 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:14.860 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:14.861 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:14.862 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:14.890 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:14.891 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:14.892 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:14.917 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:14.918 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:14.919 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:14.942 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:14.943 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:14.944 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:14.967 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:14.968 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:14.968 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:14.991 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:14.992 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:14.993 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:15.018 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:15.019 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:15.020 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:15.042 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:15.043 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:15.043 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:15.064 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:15.065 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:15.066 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:15.085 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:15.087 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:15.087 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:15.107 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:15.108 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:15.108 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:15.128 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:15.129 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:15.129 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:15.148 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:15.149 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:15.150 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:15.167 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+20:20:15.168 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+20:20:15.169 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+20:20:15.202 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Starting TC_validateLoginDataDriven **********
+20:20:15.217 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Clicking Login button from dropdown **********
+20:20:15.719 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Setting email and password for login **********
+20:20:31.358 [main] DEBUG testCases.TC002_VerifyLoginDataDriven - TestExecution failed
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[normalize-space()='My Account']"}
+  (Session info: chrome=150.0.7871.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a92dde17783475122aecdf4d3a728e7f, findElement {using=xpath, value=//h2[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.114, chrome: {chromedriverVersion: 150.0.7871.115 (25f5b661e5b..., userDataDir: C:\Users\GAUTAM\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58874}, goog:processID: 16168, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58874/devtoo..., se:cdpVersion: 150.0.7871.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a92dde17783475122aecdf4d3a728e7f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+	at pageObjects.MyAccountPage.confirmMsg(MyAccountPage.java:17)
+	at testCases.TC002_VerifyLoginDataDriven.validateLoginDataDriven(TC002_VerifyLoginDataDriven.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+20:20:31.363 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Ending TC_validateLoginDataDriven **********
+20:20:31.482 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Starting TC_validateLoginDataDriven **********
+20:20:31.483 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Clicking Login button from dropdown **********
+20:20:31.845 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Setting email and password for login **********
+20:20:37.450 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Ending TC_validateLoginDataDriven **********
+20:20:37.453 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Starting TC_validateLoginDataDriven **********
+20:20:37.453 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Clicking Login button from dropdown **********
+20:20:37.808 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Setting email and password for login **********
+20:20:42.619 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Ending TC_validateLoginDataDriven **********
+20:20:42.727 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Starting TC_validateLoginDataDriven **********
+20:20:42.728 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Clicking Login button from dropdown **********
+20:20:43.079 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Setting email and password for login **********
+20:20:57.190 [main] DEBUG testCases.TC002_VerifyLoginDataDriven - TestExecution failed
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[normalize-space()='My Account']"}
+  (Session info: chrome=150.0.7871.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a92dde17783475122aecdf4d3a728e7f, findElement {using=xpath, value=//h2[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.114, chrome: {chromedriverVersion: 150.0.7871.115 (25f5b661e5b..., userDataDir: C:\Users\GAUTAM\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58874}, goog:processID: 16168, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58874/devtoo..., se:cdpVersion: 150.0.7871.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a92dde17783475122aecdf4d3a728e7f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:390)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
+	at pageObjects.MyAccountPage.confirmMsg(MyAccountPage.java:17)
+	at testCases.TC002_VerifyLoginDataDriven.validateLoginDataDriven(TC002_VerifyLoginDataDriven.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+20:20:57.191 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Ending TC_validateLoginDataDriven **********
+20:20:57.279 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Starting TC_validateLoginDataDriven **********
+20:20:57.280 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Clicking Login button from dropdown **********
+20:20:57.626 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Setting email and password for login **********
+20:21:02.656 [main] INFO  testCases.TC002_VerifyLoginDataDriven - ********** Ending TC_validateLoginDataDriven **********
+20:36:28.379 [main] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:36:28.396 [main] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:36:28.917 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:36:31.143 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:36:31.143 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:38:39.124 [main] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:38:39.148 [main] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:38:39.559 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:38:40.774 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:38:40.774 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:38:43.323 [main] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:38:43.324 [main] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:38:43.770 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:38:45.931 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:38:45.931 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:38:52.496 [main] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:38:52.496 [main] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:38:52.895 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:38:54.060 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:38:54.061 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:48:47.427 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:48:47.474 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:48:47.542 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:48:47.543 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:48:48.086 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:48:48.132 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:48:50.260 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:48:50.261 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:48:50.266 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:48:50.266 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:48:53.797 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:48:53.797 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:48:54.296 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:48:55.552 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:48:55.552 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:50:45.065 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:50:45.065 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:50:45.098 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:50:45.098 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:50:45.703 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:50:45.776 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:50:48.197 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:50:48.199 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:50:48.339 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:50:48.339 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:50:50.818 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:50:50.818 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:50:51.193 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:50:53.088 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:50:53.088 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:52:15.599 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:52:15.642 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:52:15.776 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:52:15.777 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:52:16.353 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:52:16.647 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:52:19.493 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:52:19.494 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:52:19.508 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:52:19.508 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:52:24.335 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:52:24.336 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:52:24.861 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:52:26.022 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:52:26.024 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:52:36.524 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:52:36.563 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:52:36.564 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:52:36.564 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:52:37.177 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:52:37.236 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:52:39.115 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:52:39.115 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:52:39.145 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:52:39.145 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:52:42.897 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:52:42.897 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:52:43.287 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:52:44.332 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:52:44.332 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:55:06.811 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:55:06.851 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:55:06.971 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:55:06.972 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:55:07.973 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:55:08.212 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:55:11.262 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:55:11.262 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:55:11.285 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:55:11.285 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+20:55:12.835 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+20:55:12.835 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+20:55:13.400 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+20:55:14.938 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+20:55:14.938 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
