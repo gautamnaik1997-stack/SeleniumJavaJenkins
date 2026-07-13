@@ -49,6 +49,13 @@ public WebDriver getDriver() {
 		
 		String executionType = System.getProperty("executionType", p.getProperty("executiontype"));
 		String browser = System.getProperty("browser", br);
+		String systemBrowser = System.getProperty("browser");
+
+		System.out.println("================================");
+		System.out.println("System Browser = " + systemBrowser);
+		System.out.println("TestNG Browser = " + br);
+		System.out.println("Final Browser  = " + browser);
+		System.out.println("================================");
 		if(browser==null || browser.trim().isEmpty()) {
 			browser = "Chrome";
 		}

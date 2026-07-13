@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-13T23:36:58 IST" name="master" finished-at="2026-07-13T23:37:12 IST" duration-ms="14284">
+  <suite started-at="2026-07-13T23:56:45 IST" name="master" finished-at="2026-07-13T23:56:52 IST" duration-ms="7128">
     <groups>
     </groups>
-    <test started-at="2026-07-13T23:36:58 IST" name="edgetest" finished-at="2026-07-13T23:37:06 IST" duration-ms="8093">
+    <test started-at="2026-07-13T23:56:45 IST" name="edgetest" finished-at="2026-07-13T23:56:52 IST" duration-ms="7128">
       <class name="testCases.verifyLoginFunction">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.verifyLoginFunction@6989da5e]" started-at="2026-07-13T23:36:58 IST" name="setup" finished-at="2026-07-13T23:37:01 IST" duration-ms="3733" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.verifyLoginFunction@6989da5e]" started-at="2026-07-13T23:56:45 IST" name="setup" finished-at="2026-07-13T23:56:49 IST" duration-ms="3640" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,78 +16,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[eDGE]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validateLogin()[pri:0, instance:testCases.verifyLoginFunction@6989da5e]" started-at="2026-07-13T23:37:01 IST" name="validateLogin" finished-at="2026-07-13T23:37:05 IST" duration-ms="3746" status="PASS">
+        <test-method signature="validateLogin()[pri:0, instance:testCases.verifyLoginFunction@6989da5e]" started-at="2026-07-13T23:56:49 IST" name="validateLogin" finished-at="2026-07-13T23:56:51 IST" duration-ms="2808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.verifyLoginFunction@6989da5e]" started-at="2026-07-13T23:37:05 IST" name="teardown" finished-at="2026-07-13T23:37:06 IST" duration-ms="411" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.verifyLoginFunction@6989da5e]" started-at="2026-07-13T23:56:51 IST" name="teardown" finished-at="2026-07-13T23:56:52 IST" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.verifyLoginFunction -->
     </test> <!-- edgetest -->
-    <test started-at="2026-07-13T23:36:58 IST" name="chrometest" finished-at="2026-07-13T23:37:06 IST" duration-ms="8033">
-      <class name="testCases.verifyLoginFunction">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.verifyLoginFunction@37ceb1df]" started-at="2026-07-13T23:36:58 IST" name="setup" finished-at="2026-07-13T23:37:01 IST" duration-ms="3571" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateLogin()[pri:0, instance:testCases.verifyLoginFunction@37ceb1df]" started-at="2026-07-13T23:37:01 IST" name="validateLogin" finished-at="2026-07-13T23:37:05 IST" duration-ms="3748" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.verifyLoginFunction@37ceb1df]" started-at="2026-07-13T23:37:05 IST" name="teardown" finished-at="2026-07-13T23:37:06 IST" duration-ms="354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.verifyLoginFunction -->
-    </test> <!-- chrometest -->
-    <test started-at="2026-07-13T23:36:58 IST" name="firefoxtest" finished-at="2026-07-13T23:37:12 IST" duration-ms="14284">
-      <class name="testCases.verifyLoginFunction">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.verifyLoginFunction@20d525]" started-at="2026-07-13T23:36:58 IST" name="setup" finished-at="2026-07-13T23:37:09 IST" duration-ms="11339" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateLogin()[pri:0, instance:testCases.verifyLoginFunction@20d525]" started-at="2026-07-13T23:37:09 IST" name="validateLogin" finished-at="2026-07-13T23:37:11 IST" duration-ms="1571" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.verifyLoginFunction@20d525]" started-at="2026-07-13T23:37:11 IST" name="teardown" finished-at="2026-07-13T23:37:12 IST" duration-ms="1172" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.verifyLoginFunction -->
-    </test> <!-- firefoxtest -->
   </suite> <!-- master -->
 </testng-results>
