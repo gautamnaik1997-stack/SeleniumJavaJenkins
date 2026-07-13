@@ -48,7 +48,7 @@ public WebDriver getDriver() {
 		FileReader configFile = new FileReader(config.toLowerCase());
 		p.load(configFile);
 		
-		String executionType = System.getProperty("execution_Type", p.getProperty("executiontype"));
+		String executionType = System.getProperty("executionType", p.getProperty("executiontype"));
 		String Browser = System.getProperty("browser", br);
 		if(Browser==null || Browser.trim().isEmpty()) {
 			Browser = "Chrome";

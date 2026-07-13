@@ -108,6 +108,11 @@ def getNotificationConfig() {
 
 def getExecutionInfoTable() {
 
+def browserDisplay = params.BROWSER
+if (params.SUITEXMLFILE in ['paralleltesting.xml', 'crossbrowsertesting.xml']) {
+    browserDisplay = 'Chrome, Edge, Firefox'
+}
+
  return """
  <h3 style="color:#2E86C1;">Execution Information</h3>
 
@@ -123,7 +128,7 @@ def getExecutionInfoTable() {
 
      <tr>
          <td><b>Browser</b></td>
-         <td>${params.BROWSER}</td>
+         <td>${browserDisplay}</td>
      </tr>
 
      <tr>
@@ -410,9 +415,7 @@ pipeline {
 
             git(
 
-                branch: 'master',
-
-                url: 'https://github.com/gautamnaik1997-stack/SeleniumRevision.git'
+                checkout scm
 	
             )
 
