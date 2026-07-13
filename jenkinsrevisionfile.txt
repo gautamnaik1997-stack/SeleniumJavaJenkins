@@ -1,0 +1,319 @@
+import groovy.util.XmlSlurper
+// ==================================
+// Notification configuration helper method
+// ==================================
+def getNotificationConfig(){
+return[ 
+SUCCESS: [
+color: “green”,
+message: “Automation executed successfully.”,
+attachments: “reports/*.html”,
+attachConsoleLog: false
+]
+FAILURE: [
+color: “red”,
+message: “Pipeline execution failed.”,
+attachments: “reports/*.html,screenshots/*.png,logs/*.log”,
+attachConsoleLog: true
+]
+UNSTABLE: [
+color: “orange”,
+message: “Pipeline executed successfully but some tests are failed”,
+attachments: “reports/*.html,screenshots/*.png,logs/*.log”,
+attachConsoleLog: false
+]
+
+ABORTED: [
+color: “gray”,
+message: “Pipeline execution aborted”,
+attachments: “reports/*.html,logs/*.log”,
+attachConsoleLog: true
+]
+]}
+
+// ==========================
+//Build Info Table helper method
+// ==========================
+def getBuildInfoTable(String status){
+return  """
+<h3 style=”color:#2E86C1;”>Build Information</h3>
+<table border=”1” cellpadding=”6” cellspacing=”0” style=”border-collapse:collapse;width:60%;”>
+<tr style=”background:#f2f2f2;”>
+<th>Property</th>
+<th>Value</th>
+</tr>
+<tr>
+<td><b>Build Status</b></td>
+<td>${status}</td>
+</tr>
+<tr>
+<td><b>Project Name</b></td>
+<td>${env.JOB_NAME}</td>
+</tr>
+<tr>
+<td><b>Build Number</b></td>
+<td>${env.BUILD_NUMBER}</td>
+</tr>
+<tr>
+<td><b>Execution Node</b></td>
+<td>${env.NODE_NAME}</td>
+</tr>
+<tr>
+<td><b>Branch</b></td>
+<td>${env.GIT_BRANCH?:’master’}</td>
+</tr>
+<tr>
+<td><b>Build Duration</b></td>
+<td>${currentBuild.durationString}</td>
+</tr>
+<tr>
+<td><b>Build URL</b></td>
+<td><a href=”${env.BUILD_URL}”>Open Jenkins Build</a></td>
+</tr>
+<tr>
+<td><b>Timestamp</b></td>
+<td>${new Date()}</td>
+</tr>
+</table>
+"""
+}
+// ===================
+//Execution Info Table helper method
+// ===================
+def getExecutionInfoTable(){
+return  """
+<h3 style=”color:#2e86c1;”>Execution Information</h3>
+<table border=”1” cellpadding=”6” cellspacing=”0” style=”border-collapse:collapse;width:60%;”>
+<tr style=”background:#f2f2f2;”>
+<th>Property</th>
+<th>Value</th>
+</tr>
+<tr>
+<td><b>Browser</b></td>
+<td>${params.BROWSER}</td>
+</tr>
+<tr>
+<td><b>Environment</b></td>
+<td>${params.ENVIRONMENT}</td>
+</tr>
+<tr>
+<td><b>Suite XML Files</b></td>
+<td>${params.SUITEEXMLFILE}</td>
+</tr>
+<tr>
+<td><b>Execution Mode</b></td>
+<td>${params.EXECUTION_TYPE}</td>
+</tr>
+<tr>
+<td><b>Headless Execution</b></td>
+<td>${params.HEADLESS}</td>
+</tr>
+</table>
+"""
+}
+// ===================
+//Test Summary Table method
+// ===================
+def getTestSummaryInfoTable(){
+try{
+def resultsFile = “${env.WORKSPACE}/target/surefire-reports/testng-results.xml”
+if(!FileExists(resultsFile)){
+return  """
+<h3 style=”color:red”>Test Summary</h3>
+<p>TestNG results were not generated, Build may have failed during execution</p>
+"""
+}
+def xmlText = readFile(file: “/target/surefire-reports/testng-results.xml”)
+def xml = new XmlSlurper().parseText(xmlText)
+def attributes = xml.attributes()
+def total = attributes[“total”]
+def passed = attributes[“passed”]
+def failed = attributes[“failed”]
+def skipped = attributes[“skipped”]
+
+return  """
+<h3 style=”color:#2e86c1”>Test Summary</h3>
+<table border=”1” cellpadding=”6” cellspacing=”0” style=”border-collapse:collapse;width:60%;”>
+<tr style=”background:#f2f2f2;”>
+<th>Metric</th>
+<th>Count</th>
+</tr>
+<tr>
+<td><b>Total</b></td>
+<td>${total}</td>
+</tr>
+<tr>
+<td><b>Passed</b></td>
+<td style=”color:green;”>${passed}</td>
+</tr>
+<tr>
+<td><b>Failed</b></td>
+<td style=”color:red;”>${failed}</td>
+</tr>
+<tr>
+<td><b>Skipped</b></td>
+<td style=”color:yellow;”>${skipped}</td>
+</tr>
+</table>
+"""}
+catch(Exception e){
+return  """
+h3 style="color:red;">Test Summary</h3>
+<p>Unable to parse TestNG results.<br>
+ Error:${e.getMessage()}</p>
+ """
+}
+}
+def sendEmailNotification(String status){
+def config = getNotificationConfig()[status]
+emailext(
+to: env.EMAIL_TO,
+subject: “${status} | ${env.JOB_NAME} |Build #${env.BUILD_NUMBER} | ${params.Environment}”,
+mimetype: ‘text/html’,
+body: """
+<html>
+<body style=”font-family:Arial;font-size:14px;”>
+<h2 style=”color:${config.color};”>Automation Execution Report</h2>
+<p>
+${config.message}
+</p>
+${getBuildInfoTable(status)}
+<br>
+${getExecutionInfoTable()}
+<br>
+${getTestSummaryInfoTable()}
+<hr>
+<p>Regards,
+<br/>
+Automation Team
+</p>
+</body>
+</html>
+"""
+attachmentsPattern: config.attachments
+attachLog: config.attachConsoleLog 
+)}
+Pipeline{
+agent any
+environment{
+EMAIL_TO = ‘gautamnaik124@gmail.com’
+}
+triggers{
+//cron(H 2 * * *)
+//pollscm(H/10 * * * *)
+//githubPush()
+}
+parameters{
+choice(
+name: ‘BROWSER’,
+choices : [‘Chrome’, ‘Edge’, ‘Firefox’],
+description: ‘Select Browser’,
+)
+
+Choice(
+name: ‘ENVIRONMENT’,
+choices: [‘QA’, ‘UAT’],
+description: ‘Select Environment’,
+)
+
+choice(
+name: ‘EXECUTION_TYPE’,
+choices: [‘Local’, ‘Remote’],
+description: ‘Select Execution Mode’,
+)
+
+choice(
+name: ‘SUITEXMLFILE’,
+choices: [‘master.xml’, ‘regression.xml’, ‘smoke.xml’, ‘sanity.xml’, ‘crossbrowsertesting.xml’],
+description: ‘Select Testng Suite’,
+)
+
+choice(
+name: ‘HEADLESS’,
+choices: [‘True’, ‘False’],
+description: ‘Headless Execution’,
+)
+}
+stages{
+stage(‘checkout source’){
+steps{
+git(
+branch: ‘master’,
+url: ‘https://github.com/gautamnaik1997-stack/SeleniumRevision.git’
+// checkout scm
+)
+}}
+stage(‘Initialize Build’){
+steps{
+script{
+currentBuild.displayName = “${env.BUILD_NUMBER} | ${params.BROWSER} | ${params.ENVIRONMENT}”
+currentBuild.description = 
+"""
+Browser: ${params.BROWSER}
+Environment: ${params.ENVIRONMENT}
+Execution mode: ${params.EXECUTION_TYPE}
+SuiteXMLFile: ${params.SUITEXMLFILE}
+Headless: ${params.HEADLESS}
+"""
+}}
+}
+stage(‘Execution Summary’){
+steps{
+echo “================================”
+echo “Browser:                        ${params.BROWSER}”
+echo “Environment:                ${params.ENVIRONMENT}”
+echo “Execution mode:          ${params.EXECUTION_TYPE}”
+echo “SuiteXMLFile:                ${params.SUITEXMLFILE}”
+echo “Headless:                       ${params.HEADLESS}”
+echo “=================================”
+}}
+stage(‘Execute Automation’){
+steps{
+bat  """
+mvn clean test ^
+-Dbrowser:${params.BROWSER} ^
+-Denvironment:${params.ENVIRONMENT} ^
+-Dexecution_Type:${params.EXECUTION_TYPE} ^
+-DsuiteXmlFile:${params.SUITEXMLFILE} ^
+-Dheadless:${params.HEADLESS} 
+"""
+}}
+stage(‘Publish Results’){
+steps{
+junit ‘**/surefire-reports/*.xml’
+}}
+}
+post{
+always{
+archiveArtifacts(
+artifacts:”reports/*.html,screenshots/*.png,logs/*.log”,
+allowEmptyArchive:true)
+
+publishHtml([
+                allowMissing: false,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'reports',
+                reportFiles: 'report*.html',
+                reportName: 'Extent Report'
+            ])
+}
+success{
+sendEmailNotification(“SUCCESS”)
+}
+failure{
+sendEmailNotification(“FAILURE”)
+}
+unstable{
+sendEmailNotification(“UNSTABLE”)
+}
+aborted{
+sendEmailNotification(“ABORTED”)
+}
+cleanup{
+cleanWs()
+}
+}
+}
+
+
