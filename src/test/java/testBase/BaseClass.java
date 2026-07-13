@@ -13,7 +13,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,7 +21,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -54,11 +52,23 @@ public WebDriver getDriver() {
 			Browser = "Chrome";
 		}
 		
+		
 		ChromeOptions chromeOptions = new ChromeOptions();
 		EdgeOptions edgeOptions = new EdgeOptions();
 		FirefoxOptions firefoxOptions = new FirefoxOptions();
 		
 		boolean Headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
+		
+		// Chrome
+		chromeOptions.addArguments("--disable-gpu");
+		chromeOptions.addArguments("--disable-dev-shm-usage");
+		chromeOptions.addArguments("--no-sandbox");
+		
+		// Edge
+		edgeOptions.addArguments("--disable-gpu");
+		edgeOptions.addArguments("--disable-dev-shm-usage");
+		edgeOptions.addArguments("--no-sandbox");
+		
 		if(Headless==true) {
 			
 			chromeOptions.addArguments("--headless=new");
