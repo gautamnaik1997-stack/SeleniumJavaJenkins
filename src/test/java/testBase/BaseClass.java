@@ -67,6 +67,7 @@ public static WebDriver getDriver() {
 			edgeOptions.addArguments("--window-size=1920,1080");
 			edgeOptions.addArguments("--disable-dev-shm-usage");
 			edgeOptions.addArguments("--no-sandbox");
+			edgeOptions.addArguments("--remote-allow-origins=*"); 
 			
 			firefoxOptions.addArguments("--headless");
 			firefoxOptions.addArguments("--width=1920");
