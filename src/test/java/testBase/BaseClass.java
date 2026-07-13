@@ -49,6 +49,7 @@ public static WebDriver getDriver() {
 		
 		String executionType = System.getProperty("executionType", p.getProperty("executiontype"));
 		String browser = System.getProperty("browser", br);
+		System.out.println("browser property = " + System.getProperty("browser"));
 
 		boolean headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
 		
