@@ -413,12 +413,8 @@ pipeline {
 
         steps {
 
-            git(
-
-                checkout scm
+            git checkout scm
 	
-            )
-
         }
 
     }
