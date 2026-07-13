@@ -72,7 +72,7 @@ public WebDriver getDriver() {
 			firefoxOptions.addArguments("--width=1080");
 		}
 		
-		logger = LogManager.getLogger(this.getClass());
+		logger = LogManager.getLogger(this.getClass());	
 		
 		if(executionType.equalsIgnoreCase("remote")) {
 			String huburl = "http://localhost:4444";
@@ -90,9 +90,9 @@ public WebDriver getDriver() {
 		
 		if(executionType.equalsIgnoreCase("local")) {
 			switch(Browser.toLowerCase()) {
-			case "chrome": driver.set(new ChromeDriver());break;
-			case "edge": driver.set(new EdgeDriver());break;
-			case "firefox": driver.set(new FirefoxDriver()); break;
+			case "chrome": driver.set(new ChromeDriver(chromeOptions));break;
+			case "edge": driver.set(new EdgeDriver(edgeOptions));break;
+			case "firefox": driver.set(new FirefoxDriver(firefoxOptions)); break;
 			default: throw new IllegalArgumentException("Inavlid browser: "+ br);
 			}
 		}
