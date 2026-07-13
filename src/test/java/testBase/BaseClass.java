@@ -52,6 +52,8 @@ public WebDriver getDriver() {
 			Browser = "Chrome";
 		}
 		
+		logger = LogManager.getLogger(this.getClass());	
+		
 		logger.info("========================================");
 		logger.info("Thread ID           : " + Thread.currentThread().getId());
 		logger.info("TestNG Browser (br) : " + br);
@@ -89,7 +91,7 @@ public WebDriver getDriver() {
 			firefoxOptions.addArguments("--width=1080");
 		}
 		
-		logger = LogManager.getLogger(this.getClass());	
+
 		
 		if(executionType.equalsIgnoreCase("remote")) {
 			String huburl = "http://localhost:4444";
