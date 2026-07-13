@@ -977,3 +977,37 @@ Session ID: a95c145d90f073637a3e2df335321cf6
 23:17:14.335 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
 23:17:16.152 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
 23:17:16.152 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+23:36:03.950 [main] INFO  testCases.verifyLoginFunction - ========================================
+23:36:03.953 [main] INFO  testCases.verifyLoginFunction - Thread ID           : 1
+23:36:03.954 [main] INFO  testCases.verifyLoginFunction - TestNG Browser (br) : eDGE
+23:36:03.954 [main] INFO  testCases.verifyLoginFunction - System browser      : null
+23:36:03.954 [main] INFO  testCases.verifyLoginFunction - Resolved Browser    : eDGE
+23:36:03.954 [main] INFO  testCases.verifyLoginFunction - Suite XML           : null
+23:36:03.954 [main] INFO  testCases.verifyLoginFunction - ========================================
+23:36:08.065 [main] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+23:36:08.215 [main] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+23:36:08.951 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+23:36:11.251 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+23:36:11.252 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+23:36:58.760 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ========================================
+23:36:58.764 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - Thread ID           : 29
+23:36:58.764 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - TestNG Browser (br) : Chrome
+23:36:58.764 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - System browser      : null
+23:36:58.764 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - Resolved Browser    : Chrome
+23:36:58.764 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - Suite XML           : null
+23:36:58.764 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ========================================
+23:37:01.960 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+23:37:01.960 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+23:37:02.000 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+23:37:02.000 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+23:37:02.980 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+23:37:03.091 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+23:37:05.682 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+23:37:05.682 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+23:37:05.700 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+23:37:05.700 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+23:37:09.561 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+23:37:09.561 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+23:37:09.937 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+23:37:11.129 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+23:37:11.129 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********

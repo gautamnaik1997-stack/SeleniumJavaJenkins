@@ -39,34 +39,24 @@ public WebDriver getDriver() {
 	@Parameters({"OS", "Browser"})
 	@BeforeClass(alwaysRun = true)
 	public void setup(String os, String br) throws IOException {
-		
-		p=new Properties();
-		String jenkinsConfig = System.getProperty("environment", "QA");
-		String config = System.getProperty("user.dir")+ "\\src\\test\\resources\\config\\" + jenkinsConfig + ".properties";
-		FileReader configFile = new FileReader(config.toLowerCase());
-		p.load(configFile);
-		
-		String executionType = System.getProperty("executionType", p.getProperty("executiontype"));
-		String Browser = System.getProperty("browser", br);
-		if(Browser==null || Browser.trim().isEmpty()) {
-			Browser = "Chrome";
-		}
-		
 		logger = LogManager.getLogger(this.getClass());	
 		
-		logger.info("========================================");
-		logger.info("Thread ID           : " + Thread.currentThread().getId());
-		logger.info("TestNG Browser (br) : " + br);
-		logger.info("System browser      : " + System.getProperty("browser"));
-		logger.info("Resolved Browser    : " + Browser);
-		logger.info("Suite XML           : " + System.getProperty("suiteXmlFile"));
-		logger.info("========================================");
+		String environment = System.getProperty("environment", "QA");
+		String configFile = System.getProperty("user.dir")+ "\\src\\test\\resources\\config\\" + environment.toLowerCase() + ".properties";
+		p=new Properties();
+		FileReader file = new FileReader(configFile);
+		p.load(file);
+		
+		String executionType = System.getProperty("executionType", p.getProperty("executiontype"));
+		String browser = System.getProperty("browser", br);
+		if(browser==null || browser.trim().isEmpty()) {
+			browser = "Chrome";
+		}
+		boolean Headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
 		
 		ChromeOptions chromeOptions = new ChromeOptions();
 		EdgeOptions edgeOptions = new EdgeOptions();
 		FirefoxOptions firefoxOptions = new FirefoxOptions();
-		
-		boolean Headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
 		
 		// Chrome
 		chromeOptions.addArguments("--disable-gpu");
@@ -91,11 +81,9 @@ public WebDriver getDriver() {
 			firefoxOptions.addArguments("--width=1080");
 		}
 		
-
-		
 		if(executionType.equalsIgnoreCase("remote")) {
 			String huburl = "http://localhost:4444";
-			switch(Browser.toLowerCase()) {
+			switch(browser.toLowerCase()) {
 			case "chrome": chromeOptions.setPlatformName(os.toLowerCase());
 			driver.set(new RemoteWebDriver(new URL(huburl), chromeOptions));break;
 						   
@@ -108,7 +96,7 @@ public WebDriver getDriver() {
 		}
 		
 		if(executionType.equalsIgnoreCase("local")) {
-			switch(Browser.toLowerCase()) {
+			switch(browser.toLowerCase()) {
 			case "chrome": driver.set(new ChromeDriver(chromeOptions));break;
 			case "edge": driver.set(new EdgeDriver(edgeOptions));break;
 			case "firefox": driver.set(new FirefoxDriver(firefoxOptions)); break;
@@ -118,7 +106,7 @@ public WebDriver getDriver() {
 		
 		if (getDriver() == null) {
 		    throw new RuntimeException(
-		        "WebDriver was not initialized. Browser = " + Browser +
+		        "WebDriver was not initialized. Browser = " + browser +
 		        ", ExecutionType = " + executionType
 		    );
 		}
