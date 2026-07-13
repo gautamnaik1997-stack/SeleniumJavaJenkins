@@ -475,8 +475,14 @@ pipeline {
 		 if (!(params.SUITEXMLFILE in ['paralleltesting.xml', 'crossbrowsertesting.xml'])) {
                 browserProperty = "-Dbrowser=${params.BROWSER}"
             	}
+		
+		echo "browserProperty = ${browserProperty}"
+		echo "params.BROWSER = ${params.BROWSER}"
 
             bat """
+	
+echo Running:
+echo mvn clean test ${browserProperty} -DsuiteXmlFile=${params.SUITEXMLFILE} -Denvironment=${params.ENVIRONMENT} -DexecutionType=${params.EXECUTION_TYPE} -Dheadless=${params.HEADLESS}
 
             mvn clean test ^
 

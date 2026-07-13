@@ -52,6 +52,13 @@ public WebDriver getDriver() {
 			Browser = "Chrome";
 		}
 		
+		logger.info("========================================");
+		logger.info("Thread ID           : " + Thread.currentThread().getId());
+		logger.info("TestNG Browser (br) : " + br);
+		logger.info("System browser      : " + System.getProperty("browser"));
+		logger.info("Resolved Browser    : " + Browser);
+		logger.info("Suite XML           : " + System.getProperty("suiteXmlFile"));
+		logger.info("========================================");
 		
 		ChromeOptions chromeOptions = new ChromeOptions();
 		EdgeOptions edgeOptions = new EdgeOptions();
