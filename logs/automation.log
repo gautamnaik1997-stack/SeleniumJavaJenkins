@@ -1031,3 +1031,18 @@ Session ID: a95c145d90f073637a3e2df335321cf6
 02:12:14.677 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
 02:12:17.042 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
 02:12:17.042 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+02:25:11.916 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+02:25:11.962 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+02:25:12.063 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+02:25:12.063 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+02:25:12.894 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+02:25:12.972 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+02:25:16.945 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+02:25:16.946 [TestNG-tests-2] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+02:25:17.136 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+02:25:17.136 [TestNG-tests-1] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+02:25:17.408 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+02:25:17.409 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+02:25:17.969 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+02:25:20.279 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+02:25:20.279 [TestNG-tests-3] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********

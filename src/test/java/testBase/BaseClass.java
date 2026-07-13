@@ -49,7 +49,6 @@ public static WebDriver getDriver() {
 		
 		String executionType = System.getProperty("executionType", p.getProperty("executiontype"));
 		String browser = System.getProperty("browser", br);
-		System.out.println("browser property = " + System.getProperty("browser"));
 
 		boolean headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
 		
@@ -65,10 +64,14 @@ public static WebDriver getDriver() {
 			chromeOptions.addArguments("--no-sandbox");
 			
 			edgeOptions.addArguments("--headless=new");
-			edgeOptions.addArguments("--window-size=1920,1080");
+			edgeOptions.addArguments("--disable-gpu");
+			edgeOptions.addArguments("--disable-extensions");
+			edgeOptions.addArguments("--disable-popup-blocking");
+			edgeOptions.addArguments("--disable-infobars");
+			edgeOptions.addArguments("--remote-debugging-port=0");
 			edgeOptions.addArguments("--disable-dev-shm-usage");
 			edgeOptions.addArguments("--no-sandbox");
-			edgeOptions.addArguments("--remote-allow-origins=*"); 
+			edgeOptions.addArguments("--window-size=1920,1080");
 			
 			firefoxOptions.addArguments("--headless");
 			firefoxOptions.addArguments("--width=1920");
