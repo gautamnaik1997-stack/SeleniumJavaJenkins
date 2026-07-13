@@ -5,18 +5,10 @@
 <listeners>
 <listener class-name="utils.ExtentReportsManager"></listener>
 </listeners>
-<test name="edgetest">
-<parameter name="OS" value="Windows"></parameter>
-<parameter name="Browser" value="eDGE"></parameter>
-<classes>
-<class name="testCases.verifyLoginFunction"></class>
-<!--<class name="testCases.TC002_VerifyLoginDataDriven"></class>-->
-</classes>
-</test>
 
 <test name="chrometest">
 <parameter name="OS" value="Windows"></parameter>
-<parameter name="Browser" value="Chrome"></parameter>
+<parameter name="Browser" value="cHrome"></parameter>
 <classes>
 <class name="testCases.verifyLoginFunction"></class>
 <!--<class name="testCases.TC002_VerifyLoginDataDriven"></class>-->
