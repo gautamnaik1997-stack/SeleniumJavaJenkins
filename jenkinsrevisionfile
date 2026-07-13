@@ -409,15 +409,6 @@ pipeline {
     }
 
     stages{
-    stage('Checkout Source') {
-
-        steps {
-
-            git checkout scm
-	
-        }
-
-    }
     
     stage('Initialize Build') {
 
