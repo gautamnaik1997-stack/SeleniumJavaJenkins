@@ -477,12 +477,20 @@ pipeline {
     stage('Execute Automation') {
 
         steps {
+		
+	   script {
+		
+		def browserProperty = ""
+		
+		 if (!(params.SUITEXMLFILE in ['paralleltesting.xml', 'crossbrowsertesting.xml'])) {
+                browserProperty = "-Dbrowser=${params.BROWSER}"
+            	}
 
             bat """
 
             mvn clean test ^
 
-            -Dbrowser=${params.BROWSER} ^
+            ${browserProperty} ^
 
             -DsuiteXmlFile=${params.SUITEXMLFILE} ^
 
@@ -494,7 +502,7 @@ pipeline {
 
             """
 
-        }
+        }}
 
     }
     
