@@ -1021,3 +1021,8 @@ Session ID: a95c145d90f073637a3e2df335321cf6
 23:56:49.958 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
 23:56:51.985 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
 23:56:51.985 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********
+01:29:55.722 [main] INFO  testCases.verifyLoginFunction - ********** Starting TC_validateLogin **********
+01:29:55.747 [main] INFO  testCases.verifyLoginFunction - ********** Clicking Login button from dropdown **********
+01:29:56.091 [main] INFO  testCases.verifyLoginFunction - ********** Setting email and password for login **********
+01:29:57.447 [main] INFO  testCases.verifyLoginFunction - ********** Successful Login **********
+01:29:57.448 [main] INFO  testCases.verifyLoginFunction - ********** Ending TC_validateLogin **********

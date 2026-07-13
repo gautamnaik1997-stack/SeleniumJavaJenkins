@@ -50,13 +50,13 @@ public static WebDriver getDriver() {
 		String executionType = System.getProperty("executionType", p.getProperty("executiontype"));
 		String browser = System.getProperty("browser", br);
 
-		boolean Headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
+		boolean headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
 		
 		ChromeOptions chromeOptions = new ChromeOptions();
 		EdgeOptions edgeOptions = new EdgeOptions();
 		FirefoxOptions firefoxOptions = new FirefoxOptions();
 		
-		if(Headless==true) {
+		if(headless==true) {
 			
 			chromeOptions.addArguments("--headless=new");
 			chromeOptions.addArguments("--window-size=1920,1080");
@@ -111,7 +111,7 @@ public static WebDriver getDriver() {
 		
 		getDriver().manage().deleteAllCookies();
 		
-		if(Headless==false) {
+		if(headless==false) {
 			getDriver().manage().window().maximize();
 		}
 		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
